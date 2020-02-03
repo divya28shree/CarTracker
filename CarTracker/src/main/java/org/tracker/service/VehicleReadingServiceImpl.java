@@ -64,7 +64,7 @@ public class VehicleReadingServiceImpl implements VehicleReadingService{
             alertRepository.save(alert);
         }
         //TIRE PRESSURE
-        List<Integer> tiresList = null;
+        List<Integer> tiresList = new ArrayList<>();
         tiresList.add(reading.getTires().getFrontLeft());
         tiresList.add(reading.getTires().getFrontRight());
         tiresList.add(reading.getTires().getRearLeft());
